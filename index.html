@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="loading.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script src="loading.js"></script>
+    <script type='text/javascript'>
+        const LOADER1 = new Loading({
+                size: 2
+            }),
+            LOADER2 = new Loading({
+                type: 3,
+                size: .5,
+                top: '220px'
+            });
+
+        LOADER1.init();
+        LOADER2.init();
+
+        setTimeout(function() {
+            LOADER2.hide();
+        }, 2000)
+
+        /*  setTimeout(function() {
+             LOADER1.hide();
+         }, 4000) */
+    </script>
+</body>
+
+</html>
